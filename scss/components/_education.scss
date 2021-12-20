@@ -1,0 +1,78 @@
+.education {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+
+
+    &__title {
+        font-size: 26px;
+        font-weight: 400;
+        margin-top: 45px;
+        position: relative;
+        padding-left: 45%;
+        margin: 45px 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: -62px;
+            display: block;
+            border-bottom: 2px solid $colorBlack;
+            width: 60%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8%;
+            left: 41%;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../img/6square.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__item-library {
+        position: absolute;
+        top: 14px;
+        left: 42%;
+    }
+    &__info {
+        width: 85%;
+        min-height: 300px;
+        background-color: $colorBlack;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        transform: translateX(20%);
+        z-index: 1;
+    
+        &::before {
+            content: '';
+            width: 200px;
+            min-height: 300px;
+            position: absolute;
+            top: 0;
+            left: -70px;
+            background-color: $colorBlack;
+            transform: skewX(-11deg);
+            z-index: -1;
+        }
+    }
+    &__list {
+        display: inline-block;
+        margin-top: 60px;
+        margin-left: 15%;
+        line-height: 2;
+    }
+    &__item {
+        color: $colorWhite;
+        font-size: 18px;
+    }
+}

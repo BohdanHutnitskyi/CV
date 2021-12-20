@@ -1,0 +1,240 @@
+.main__info {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.main__left {
+    width: 40%;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+    padding: 30px 20px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        padding-right: 30px;
+    }
+    &__pic {
+        width: 80px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+.contacts {
+    height: 600px;
+    background-color: $colorBlack; 
+    font-weight: 400;
+    position: relative;
+
+    &__icon-user {
+        position: absolute;
+        top: 25px;
+        left: -58px;
+
+    }
+
+    &__list {
+        color: $colorWhite;
+        font-size: 26px;
+        font-weight: 400;
+        position: relative;
+        line-height: 3;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -75px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../img/6square-white.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__icon-phone {
+        position: absolute;
+        top: 110px;
+        left: -53px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -23px;
+            left: -22px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../img/6square-white.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__icon-mail2 {
+        position: absolute;
+        bottom: 27px;
+        left: -54px;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -19px;
+            left: -21px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../img/6square-white.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $colorWhite;
+        font-size: 18px;
+
+        &:hover {
+            color: $colorYellov;
+        }
+    }
+
+    &__info {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+.objective {
+    width: 70%;
+    min-height: 100px;
+
+    &__item {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.main__right {
+    width: 60%;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        width: 200px;
+        height: 610px;
+        position: absolute;
+        top: 0;
+        left: -70px;
+        background-color: $colorWhite;
+        transform: skewX(-11deg);
+        z-index: -1;
+    }
+}
+.work {
+
+    &__title {
+        margin: 0;
+        font-size: 26px;
+        font-weight: 400;
+        padding: 20px 0;
+        padding-left: 40px;
+        position: relative;
+        margin: 26px 26px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            display: block;
+            border-bottom: 2px solid $colorBlack;
+            width: 100%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: -10px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../img/6square.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__icon-briefcase {
+        position: absolute;
+        bottom: 10px;
+        left: 3px;
+    }
+
+    &__list {
+        line-height: 2;
+        font-size: 18px;
+    }
+}
+.skills {
+    padding-top: 100px;
+    
+    &__title {
+        font-size: 26px;
+        font-weight: 400;
+        padding: 20px 0;
+        padding-left: 40px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            display: block;
+            border-bottom: 2px solid $colorBlack;
+            width: 100%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: -10px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../img/6square.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__icon-pencil {
+        position: absolute;
+        bottom: 10px;
+        left: 3px;
+    }
+    &__list {
+        line-height: 2;
+        font-size: 18px;
+    }
+
+
+}
